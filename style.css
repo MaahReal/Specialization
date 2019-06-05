@@ -1,0 +1,25 @@
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.5)), url("./images/time.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 4em;
+}
+.header{
+    overflow: hidden;
+    padding: 20px 10px;
+}
+.header img{
+    width: 20%;
+    height: 60%;
+}
+.container{
+    margin-top: 10%;
+    color:#8993A8;
+    font-family: monospace;
+    font-style: cursive;
+    font-weight: bolder;
+}
+p{
+    text-align: right;
+}
