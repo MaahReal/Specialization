@@ -1,0 +1,89 @@
+/*table{
+	font-family: Courier New;
+	border-collapse: collapse;
+	width: 80px;
+}
+td{
+	border: 1px solid lightblue;
+	text-align: left;
+	padding: 8px;
+	width: 200px;
+}*/
+tr:nth-child(odd) {
+    background-color: #dddddd;
+  }
+  
+  th{
+      font-family: Courier New;
+      font-size: 20px;
+      margin-left: 40px;
+  }
+  td{
+      text-align: left;
+      font-family: Courier New;	
+  
+  }
+  table{
+      margin-top: 50px;
+      border: 1px solid black;
+      width:50%;
+      border-collapse: collapse;
+      margin-left: 30px;
+  }
+  td{
+      padding: 8px;
+      border: 1px solid black;
+  }
+  /*th{
+      border: 1px solid black;
+      text-align: center;
+  }*/
+  
+  #timeinBtn{
+      /*margin-top: -35px;*/
+      margin-left: 100px;
+  }
+  /*#timeoutBtn{
+      margin-top: -35px;
+  }*/
+  
+  #timeinBtn1{
+      /*margin-top: -35px;*/
+      margin-left: 150px;
+  }
+  /*#timeoutBtn1{
+      margin-top: -35px;
+  }*/
+  #timeinBtn2{
+      /*margin-top: -35px;*/
+      margin-left: 165px;
+  }
+  /*#timeoutBtn2{
+      margin-top: -35px;
+  }*/
+  #timeinBtn3{
+      /*margin-top: -35px;*/
+      margin-left: 132px;
+  }
+  /*#timeoutBtn3{
+      margin-top: -35px;
+  }*/
+  #timeinBtn4{
+      /*margin-top: -35px;*/
+      margin-left: 150px;
+  }
+  /*#timeoutBtn4{
+      margin-top: -35px;
+  }*/
+  #logo{
+      width: 200px;
+      height: 200px;
+  }
+  .cancelBtn:hover{
+      color: white;
+      text-decoration: none;
+  }
+  .cancelBtn{
+      color: white;
+      text-decoration: none;
+  }

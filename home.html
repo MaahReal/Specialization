@@ -5,15 +5,10 @@
     <title>HOME</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/css/bootstrap.css">
+    <script src="./jquery.js"></script>
+    <script src="./bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -21,9 +16,8 @@
         <img src="./images/logo-en.png" alt="logo">
     </div>
     <div class="container">
-        <h1>"The key is in not spending time, but in investing it."</h1>
-        <p>-Stephen R. Covey</p>
-
+        <h1>"Time is free, but it’s priceless. You can’t own it, but you can use it. You can’t keep it, but you can spend it. Once you’ve lost it you can never get it back."</h1>
+        <p>-Harvey Mackay-</p>
         <input class="btn btn-primary btn-lg text-uppercase js-scroll-trigger" type="button" value="Login" data-toggle="modal"
             data-target="#loginModal" />
     </div>
@@ -36,9 +30,9 @@
             <div class="loginmodal-container">
                 <h1>Login to Your Account</h1><br>
                 <form class="modal-content animate" action="/" method="POST">
-                    <input type="text" name="user" placeholder="Username" required>
-                    <input type="password" name="pass" placeholder="Password" required>
-                    <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                    <input type="text" name="user" placeholder="Username" required id = "user">
+                    <input type="password" name="pass" placeholder="Password" required id = "password">
+                    <a href ="dashboard.html" class="loginmodal-submit" value="login">Login</a>
                 </form>
 
                 <!-- <div class="login-help">

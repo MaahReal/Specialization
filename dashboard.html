@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin View</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/css/bootstrap.css">	
+<script src="jquery.js"></script>
+  	<script src="./bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="script.js"></script>
+
+</head>
+<body onload = "startTime();">
+	<header>
+			<div>
+				<img align="left" src="./images/pnlogo.png" id="logo" class="unique">
+				<a href="dashboard.html" class = "badge badge-warning label-medium">Home</a>
+				<a href="student.html" class = "badge badge-warning label-medium">Student List</a>
+			    <a href="partner.html" class = "badge badge-warning label-medium">Partner Company</a>
+			    <a href="individual.html" class = "badge badge-warning label-medium">Batch Picture</a>
+			    <a href="register.html" class ="badge badge-warning label-medium" >Register Account </a>
+		  		<a href="home.html" class = "badge badge-warning label-medium" >Log Out </a>
+
+			</div>
+	</header>
+		<center>
+		 <button class="times" disabled=""><div id="txt"></div></button>
+		</center>
+	 <center>
+	 <div class="card-body table-full-width table-responsive ">
+	 	<table class = "table table-hover table-striped">
+			<tr>
+		            <th>Firstname</th>
+				    <th>Lastname</th>
+				    <th>Batch</th>
+				    <th>Time In</th>
+				    <th>Time Out</th>
+				    <th></th>
+				  </tr>
+				  <tr>
+				    <td id = "data">Jessa</td>
+				    <td >Jalandoni</td>
+				    <td>2021</td>
+				    <td><button class="btn btn-primary but" disabled="">7:30</button></td>
+				    <td><button class="btn btn-primary but" disabled="">9:30</button></td>
+				    <td><button class = "btn btn-primary but" ><a href="update.html" id = "updateBtn">Update</a></button>
+				    <button class = "btn btn-primary but" id = "deleteBtn" onclick = "deleteAccount();">Delete</button></td>
+				  </tr>
+				  <tr>
+				    <td id = "data">John Patrick</td>
+				    <td>Cabian</td>
+				    <td>2021</td>
+				    <td><button class="btn btn-primary but" disabled="">8:30</button></td>
+				    <td><button class=" btn btn-primary but" disabled="">7:00</button></td>
+				    <td><button class = " btn btn-primary but"><a href="update.html" id = "updateBtn">Update</a></button>
+				    <button class = " btn btn-primary but" id = "deleteBtn" onclick = "deleteAccount();">Delete</button></td>
+				  </tr>
+				  <tr>
+				    <td id = "data">Jhon Mark</td>
+				    <td>Santiago</td>
+				    <td>2020</td>
+				    <td><button class=" btn btn-primary but" disabled="">7:30</button></td>
+				    <td><button class=" btn btn-primary but" disabled ="">6:30</button></td>
+				    <td><button class = "btn btn-primary but"><a href="update.html" id = "updateBtn">Update</a></button>
+				    <button class = "btn btn-primary but" id = "deleteBtn" onclick = "deleteAccount();">Delete</button></td>
+				  </tr>
+				  <tr>
+				    <td id = "data">Fremen</td>
+				    <td>Pila</td>
+				    <td>2020</td>
+				    <td><button class="btn btn-primary but" disabled="">5:30</button></td>
+				    <td><button class=" btn btn-primary but" disabled="">6:30</button></td>
+				    <td><button class = " btn btn-primary but"><a href="update.html" id = "updateBtn">Update</a></button>
+				    <button class = " btn btn-primary but" id = "deleteBtn" onclick = "deleteAccount();">Delete</button></td>
+				  </tr>
+				  <tr>
+				    <td id = "data">Imae</td>
+				    <td>Toamquin</td>
+				    <td>2020</td>
+				    <td><button class="btn btn-primary but" disabled="">7:30</button></td>
+				    <td><button class="btn btn-primary but" disabled="">9:30</button></td>
+				    <td><button class=" btn btn-primary but" ><a href="update.html" id = "updateBtn">Update</a></button>
+				    <button class = " btn btn-primary but" id = "deleteBtn" onclick = "deleteAccount();">Delete</button></td>
+				  </tr>
+				  <tr>
+				    <td id = "data">Daniel Dems</td>
+				    <td>Palupad</td>
+				    <td>2019</td>
+				    <td><button class=" btn btn-primary but" disabled="">7:30</button></td>
+				    <td><button class=" btn btn-primary but" disabled="">9:30</button></td>
+				    <td><button class = "btn btn-primary but"><a href="update.html" id = "updateBtn">Update</a></button>
+				    <button class = "btn btn-primary but" id = "deleteBtn" onclick = "deleteAccount();">Delete</button></td>
+				  </tr>
+				  <tr>
+				    <td id = "data">Daniel Dems</td>
+				    <td>Palupad</td>
+				    <td>2019</td>
+				    <td><button class="btn btn-primary but" disabled="">7:30</button></td>
+				    <td><button class=" btn btn-primary but" disabled="">9:30</button></td>
+				    <td><button class = "btn btn-primary but"><a href="update.html" id = "updateBtn">Update</a></button>
+				    <button class = " btn btn-primary but" id = "deleteBtn" onclick = "deleteAccount();">Delete</button></td>
+				  </tr>
+				  <tr>
+				    <td id = "data">Daniel Dems</td>
+				    <td>Palupad</td>
+				    <td>2019</td>
+				    <td><button class=" btn btn-primary but" disabled="">7:30</button></td>
+				    <td><button class=" btn btn-primary but" disabled="">9:30</button></td>
+				    <td><button class = "btn btn-primary but"><a href="update.html" id = "updateBtn">Update</a></button>
+				    <button class = "btn btn-primary but" id = "deleteBtn" onclick = "deleteAccount();">Delete</button></td>
+				  </tr>
+				  <tr>
+				    <td id = "data">Daniel Dems</td>
+				    <td>Palupad</td>
+				    <td>2019</td>
+				    <td><button class = "btn btn-primary but" disabled="">7:30</button></td>
+				    <td><button class = "btn btn-primary but" disabled="">9:30</button></td>
+				    <td><button class = "btn btn-primary but"><a href="update.html" id = "updateBtn">Update</a></button>
+				    <button class = "btn btn-primary but" id = "deleteBtn" onclick = "deleteAccount();">Delete</button></td>
+				  </tr>
+				  <tr>
+				    <td id = "data">Daniel Dems</td>
+				    <td>Palupad</td>
+				    <td>2019</td>
+				    <td><button class = "btn btn-primary but" disabled="">7:30</button></td>
+				    <td><button class = "btn btn-primary but" disabled="">9:30</button></td>
+				    <td><button class = "btn btn-primary but"><a href="update.html" id = "updateBtn">Update</a></button>
+				    <button class = "btn btn-primary but" id = "deleteBtn" onclick = "deleteAccount();">Delete</button></td>
+				  </tr>
+				  <tr>
+				    <td id = "data">Daniel Dems</td>
+				    <td>Palupad</td>
+				    <td>2019</td>
+				    <td><button class = "btn btn-primary but" disabled="">7:30</button></td>
+				    <td><button class = "btn btn-primary but" disabled="">9:30</button></td>
+				    <td><button class = "btn btn-primary but"><a href="update.html" id = "updateBtn">Update</a></button>
+				    <button class = "btn btn-primary but" id = "deleteBtn" onclick = "deleteAccount();">Delete</button></td>
+				  </tr>
+				   <tr>
+				    <td id = "data">Daniel Dems</td>
+				    <td>Palupad</td>
+				    <td>2019</td>
+				    <td><button class = "btn btn-primary but" disabled="">7:30</button></td>
+				    <td><button class = "btn btn-primary but" disabled="">9:30</button></td>
+				    <td><button class = "btn btn-primary but"><a href="update.html" id = "updateBtn">Update</a></button>
+				    <button class = "btn btn-primary but" id = "deleteBtn" onclick = "deleteAccount();">Delete</button></td>
+				  </tr>
+				   <tr>
+				    <td id = "data">Daniel Dems</td>
+				    <td>Palupad</td>
+				    <td>2019</td>
+				    <td><button class = "btn btn-primary but" disabled="">7:30</button></td>
+				    <td><button class = "btn btn-primary but" disabled="">9:30</button></td>
+				    <td><button class = "btn btn-primary but"><a href="update.html" id = "updateBtn">Update</a></button>
+				    <button class = "btn btn-primary but" id = "deleteBtn" onclick = "deleteAccount();">Delete</button></td>
+				  </tr>
+				   <tr>
+				    <td id = "data">Daniel Dems</td>
+				    <td>Palupad</td>
+				    <td>2019</td>
+				    <td><button class = "btn btn-primary but" disabled="">7:30</button></td>
+				    <td><button class = "btn btn-primary but" disabled="">9:30</button></td>
+				    <td><button class = "btn btn-primary but"><a href="update.html" id = "updateBtn">Update</a></button>
+				    <button class = "btn btn-primary but" id = "deleteBtn" onclick = "deleteAccount();">Delete</button></td>
+				  </tr>
+			 </table>
+		</div>
+		</center>
+			<!--  <img src="chartss.jpg" class="first">
+ -->
+           
+</body>
+	
+</html>

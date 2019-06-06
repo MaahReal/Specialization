@@ -1,0 +1,96 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="C:\Users\student\Documents\Project\bootstrap-4.3.1\dist\css\bootstrap.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+			<div>
+				<img align="left" src="logo.png" class="unique"> Welcome
+				<a href="Dashboard.html">Home</a>
+				<button><a href="student.html">StudentList</a>
+			    <a href="partner.html">Partner Company</a>
+			    <button><a href="individual.html">Individual Pic</a></button>
+			    
+			</div>
+	</header>
+		<div class="sidenav">
+		  <img src="cj.jpg" class="mine"><br><br>
+		  <button><a href="login.html">Register </a></button><br><br>
+		  <button><a href="Home.html">Logout</a></button><br><br>
+		</div>
+	</body>
+	<script src="jquery.js"></script>
+  	<script src ="C:\Users\student\Documents\Project\bootstrap-4.3.1\dist\js\bootstrap.min.js"></script>
+	</html> -->
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Update Account</title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/css/bootstrap.css">
+    <script src="./jquery.js"></script>
+    <script src="./bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" type="text/css" href="register.css">
+  <link rel="stylesheet" type="text/css" href="studentView.css">
+  <style type="text/css"></style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Update Account</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Update Account</button>
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" ><a href="dashboard.html" class = "cancelBtn">Cancel</a></button>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Update Account</h4>
+        </div>
+        <div class="modal-body">
+          <form action="/action_page.php">
+      <div class="modal-title">
+
+            <label for="email"><b>First Name</b></label><br>
+            <input type="text" placeholder="First Name" name="name" required><br><br>
+
+            <label for="email"><b>Last Name</b></label><br>
+            <input type="text" placeholder="Last Name" name="name" required><br><br>
+
+            <label for="email"><b>Batch</b></label><br>
+            <input type="text" placeholder="Class Batch" name="name" required><br><br>
+
+            <label for="psw"><b>Password</b></label><br>
+            <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+
+            <label for="psw-repeat"><b>Confirm Password</b></label><br>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required><br><br>
+
+            <a href="Dashboard.html"><button class="registerbtn" id="red" onclick="updateAccounts()">Update</a></button>
+            
+          </div>
+  </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+</body>
+</html>

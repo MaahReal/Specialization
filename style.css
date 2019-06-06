@@ -1,119 +1,257 @@
-body{
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0, 0, 0, 0.5)), url("./images/time.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
-@import url(http://fonts.googleapis.com/css?family=Roboto);
-/****** LOGIN MODAL ******/
-.loginmodal-container {
-  padding: 30px;
-  max-width: 350px;
-  width: 100% !important;
-  background-color: #F7F7F7;
-  margin: 0 auto;
-  border-radius: 2px;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-  font-family: roboto;
+button{
+  height: 70px;
+  width: 200px;
+  margin-left: 20px;
+  font-family: Courier New;
+  font-size: 20px;
+  color: black;
+  border-radius: 10px;
 }
-.loginmodal-container h1 {
-  text-align: center;
-  font-size: 1.8em;
-  font-family: roboto;
+
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  margin-top: 110px;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
-.loginmodal-container input[type=submit] {
-  width: 100%;
-  display: block;
-  margin-bottom: 10px;
-  position: relative;
-}
-.loginmodal-container input[type=text], input[type=password] {
-  height: 44px;
-  font-size: 16px;
-  width: 100%;
-  margin-bottom: 10px;
-  -webkit-appearance: none;
-  background: #fff;
-  border: 1px solid #d9d9d9;
-  border-top: 1px solid #c0c0c0;
-  /* border-radius: 2px; */
-  padding: 0 8px;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
-.loginmodal-container input[type=text]:hover, input[type=password]:hover {
-  border: 1px solid #b9b9b9;
-  border-top: 1px solid #a0a0a0;
-  -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-  box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-}
-.loginmodal {
-  text-align: center;
-  font-size: 14px;
-  font-family: 'Arial', sans-serif;
-  font-weight: 700;
-  height: 36px;
-  padding: 0 8px;
-/* border-radius: 3px; */
-/* -webkit-user-select: none;
-  user-select: none; */
-}
-.loginmodal-submit {
-  /* border: 1px solid #3079ed; */
-  border: 0px;
-  color: #fff;
-  text-shadow: 0 1px rgba(0,0,0,0.1); 
-  background-color: #4d90fe;
-  padding: 17px 0px;
-  font-family: roboto;
-  font-size: 14px;
-  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
-}
-.loginmodal-submit:hover {
-  /* border: 1px solid #2f5bb7; */
-  border: 0px;
-  text-shadow: 0 1px rgba(0,0,0,0.3);
-  background-color: #357ae8;
-  /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
-}
-.loginmodal-container a {
+
+.sidenav a {
+  padding: 6px 5px 6px 8px;
   text-decoration: none;
-  color: #666;
-  font-weight: 400;
+  font-size: 25px;
+ /* color:transparent black;*/
+  display: block;
   text-align: center;
-  display: inline-block;
-  opacity: 0.6;
-  transition: opacity ease 0.5s;
-} 
-.login-help{
-  font-size: 12px;
 }
-.btn-primary{
-    background-color: #C07A33;
+
+.sidenav a:hover {
+  color:blue;
 }
-.header{
-    overflow: hidden;
-    padding: 30px 20px;
+header{
+  background-color: #0099FF;
+  padding: 10px;
+  font-size: 30px;
+  border: none;
+  color: black;
+  font-weight: bold;
+  position: fixed;
+  width: 100%;
+  /*margin-top: 10px;*/
+  
 }
-.header img{
-    width: 30%;
+table {
+  font-family: Courier New;
+  width: 50%;
+  margin-top: 20px;
+
 }
-.container{
-    height: initial;
-    margin-top: 15%;
-    color:#8993A8;
-    font-family: monospace;
-    font-style: oblique;
-    font-weight: bolder;
-    font-size: 4em;
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+  font-size: 20px;
 }
-p{
-    text-align: right;
+th{
+  background-color: #3399FF;
 }
-.container input{
-    margin-top: 155px;
-    margin-left: 500px;
-    
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.mine{
+  width: 100px;
+  height: 150px;
+  margin-left: 80px;
+  border-radius: 100%;
+}
+.unique{
+  width: 100px;
+  height: 70px;
+  border-radius: 100%;
+  margin-top: 5px;
+
+}
+.charts{
+    height: 300px;
+    width: 300px;
+    margin-top: 30px;
+}
+h3{
+  margin-left: 1000px;
+  background-color: black;
+  width: 350px;
+  height: 50px;
+  border: solid;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+}
+h4{
+  margin-left: 600px;
+  background-color: black;
+  width: 350px;
+  height: 50px;
+  border: solid;
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+  
+}
+/*studentList*/
+.picture{
+   height:770px;
+   width:800px;
+   margin-left: 350px;
+   margin-top: 5px;
+
+
+}
+.pictures{
+  height:770px;
+  width:800px;
+  margin-left: 350px;
+  margin-top: 5px;
+}
+.picturess{
+  height:770px;
+  width:800px;
+  margin-left: 350px;
+  margin-top: 5px;
+}
+.one{
+  margin-top: 50px;
+}
+.but{
+  height: 30px;
+  width: 90px;
+  font-family: Courier;
+  border-radius: 10px;
+  margin-left: 10px;
+  /*color: white;*/
+}
+.times{
+  margin-left: -100px;
+  background-color: transparent;
+  width: 630px;
+  height: 100px;
+  border: solid;
+  color: black;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 50px;
+  margin-top: 120px;
+}
+.company{
+  margin-left: 300px;
+  width: 75%;
+  height: 200%;
+  text-align: center;
+  margin-top: 100px;
+ 
+}
+h5{
+   height:50px;
+   width:902px;
+   font-size: 20px;
+   padding-top: 20px;
+   margin-left: 350px;
+   margin-top: 10px;
+   background-color: black;
+   border: solid;
+   color: white;
+   text-align: center;
+}
+.first{
+  margin-left: 500px;
+  width: 50%;
+  text-align: center;
+  margin-top: 20px;
+  height: 500px;
+  background-color: blue;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+a{
+  /*font-style: italic;*/
+  text-decoration: none;
+  color: white;
+  margin-left: 80px;
+  margin-top: 10px;
+}
+a:hover{
+  text-decoration: none;
+  color: white;
+}
+
+#navStyle{
+  margin-top: 100px;
+  margin-left: -30px;
+  font-size: 30px;
+  font-family: Courier New;
+}
+#navStyle1{
+  margin-left: -30px;
+  font-size: 30px;
+  font-family: Courier New;
+}
+#logo{
+  width: 80px;
+  height: 80px;
+}
+h5{
+  font-family: Courier New;
+}
+#updateBtn{
+  margin-left: -10px;
+  color: white;
+  text-align: center;
+}
+#deleteBtn{
+  color: white;
+  margin-left: 10px;
+  text-align: center;
+}
+.label-medium {
+  vertical-align: super;
+  font-size: 30px;
+  margin-left: 100px;
+  font-family: Courier New;
+  color: white;
+  background-color: transparent;
+}
+/*.labellabel-default{
+  font-size: 50px;
+  margin-left: 30px;
+}*/
+/*#home{
+  margin-left: 80px;
+  height: 30px;
+}*/
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.images{
+   height: 200px;
+   width: 300px;
 }
