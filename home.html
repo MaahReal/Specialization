@@ -9,6 +9,7 @@
     <script src="./jquery.js"></script>
     <script src="./bootstrap-4.3.1-dist/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles.css">
+    <script src="./script.js"></script>
 </head>
 
 <body>
@@ -16,23 +17,25 @@
         <img src="./images/logo-en.png" alt="logo">
     </div>
     <div class="container">
-        <h1>"Time is free, but it’s priceless. You can’t own it, but you can use it. You can’t keep it, but you can spend it. Once you’ve lost it you can never get it back."</h1>
+        <h1>"Time is free, but it’s priceless. You can’t own it, but you can use it. You can’t keep it, but you can
+            spend it. Once you’ve lost it you can never get it back."</h1>
         <p>-Harvey Mackay-</p>
-        <input class="btn btn-primary btn-lg text-uppercase js-scroll-trigger" type="button" value="Login" data-toggle="modal"
-            data-target="#loginModal" />
+        <input class="btn btn-primary btn-lg text-uppercase js-scroll-trigger" type="button" value="Login"
+            data-toggle="modal" data-target="#loginModal" />
     </div>
 
     <!-- Log in Modal -->
 
-    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
-        style="display: none;">
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true" style="display: none;">
         <div class="modal-dialog">
             <div class="loginmodal-container">
                 <h1>Login to Your Account</h1><br>
                 <form class="modal-content animate" action="/" method="POST">
-                    <input type="text" name="user" placeholder="Username" required id = "user">
-                    <input type="password" name="pass" placeholder="Password" required id = "password">
-                    <a href ="dashboard.html" class="loginmodal-submit" value="login">Login</a>
+                    <input type="text" name="user" placeholder="Username" required id="user">
+                    <input type="password" name="pass" placeholder="Password" required id="password">
+                    <!-- <input type="button" class="btn btn-primary btn-lg text-uppercase js-scroll-trigger loginmodal-submit" value="Login" onclick="checkPass()" > -->
+                    <a class="btn-lg text-uppercase loginmodal-submit" value="login" onclick="checkPass()">Login</a>
                 </form>
 
                 <!-- <div class="login-help">
